@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: linear-gradient(to left,rgb(244, 14, 252), rgb(11, 164, 235));
+    min-height: 100vh;
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 40px;
+    text-align: center;
+    
+
+}
+form{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+form input{
+    height: 35px;
+    outline: none;
+    border: none;
+    width: 35%;
+    padding: 10px;
+    font-weight: bold;
+
+    
+}
+form button{
+    border: none;
+    height: 35px;
+    background-color: white;
+    color: rgb(255, 0, 200);
+    padding: 2px;
+    width: 4%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: rgb(255, 0, 200) ;
+    color: white;
+    transition: 0.5s;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+}
+.todo{
+    display: flex;
+    background-color: white;
+    margin-bottom: 40px;
+    transition: all 1s;
+}
+.todo-list{
+    min-width: 30%;
+    list-style-type: none;
+}
+.todo-items{
+    flex: 1;
+    padding: 3px;
+}
+.trash-btn , .check-btn{
+    border: none;
+    padding: 3px;
+    min-width: 8%;
+    cursor: pointer;
+}
+.check-btn{
+    color: rgb(4, 248, 86);
+    background-color: white;
+}
+.check-btn:hover{
+    background-color: rgb(1, 221, 1);
+    color: white;
+    transition: 0.5s;
+}
+.trash-btn{
+    color: red;
+    background-color: white;
+}
+.trash-btn:hover{
+    color: white;
+    background-color: red;
+    transition: 0.5s;
+
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+.fa-trash ,
+.fa-check{
+    pointer-events: none;
+}
